@@ -28,13 +28,13 @@
         <Spinner
             android:id="@+id/spinner"
             android:layout_width="wrap_content"
-            android:layout_height="50dp"
+            android:layout_height="41dp"
             android:background="@drawable/edit_box_drop_selector"
             android:dropDownWidth="200dp"/>
 
         <EditText
             android:id="@+id/phone"
-            android:layout_height="wrap_content"
+            android:layout_height="41dp"
             android:layout_width="0dp"
             android:layout_marginLeft="0dp"
             android:layout_marginRight="0dp"
