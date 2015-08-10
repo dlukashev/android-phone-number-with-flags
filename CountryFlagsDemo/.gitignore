@@ -4,3 +4,16 @@
 /.idea/libraries
 .DS_Store
 /build
+/.idea/compiler.xml
+/.idea/copyright
+/.idea/gradle.xml
+/.idea/misc.xml
+/.idea/vcs.xml
+/.idea/modules.xml
+/.idea/tasks.xml
+/.idea/.name
+/.idea/scopes
+/.idea/encodings.xml
+/*.iml
+/*/*.iml
+/captures
