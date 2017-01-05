@@ -428,6 +428,24 @@ public abstract class BaseFlagFragment extends Fragment {
                                     }
                                 }
                             }
+                            else if (DO_CODES.contains(code)) {
+                                for (Country c : list) {
+                                    // Dominican Republic has priority 2
+                                    if (c.getPriority() == 2) {
+                                        country = c;
+                                        break;
+                                    }
+                                }
+                            }
+                            else if (PR_CODES.contains(code)) {
+                                for (Country c : list) {
+                                    // Puerto Rico has priority 3
+                                    if (c.getPriority() == 3) {
+                                        country = c;
+                                        break;
+                                    }
+                                }
+                            }
                         }
                     }
                     if (country == null) {
