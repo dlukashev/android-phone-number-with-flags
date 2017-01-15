@@ -39,7 +39,7 @@ public class Country {
             mPriority = Integer.parseInt(data[3]);
         }
         String fileName = String.format("f%03d", num);
-        mResId = context.getApplicationContext().getResources().getIdentifier(fileName, "drawable", context.getApplicationContext().getPackageName());
+        mResId = context.getResources().getIdentifier(fileName, "drawable", context.getPackageName());
     }
 
     public String getName() {
