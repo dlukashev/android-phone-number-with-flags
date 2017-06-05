@@ -34,7 +34,7 @@ Burkina Faso,bf,226
 Burundi,bi,257
 Cambodia,kh,855
 Cameroon,cm,237
-Canada,ca,1,1
+Canada,ca,1,2
 Cape Verde,cv,238
 Caribbean Netherlands,bq,599,1
 Cayman Islands,ky,1345
@@ -57,7 +57,7 @@ Czech Republic,cz,420
 Denmark,dk,45
 Djibouti,dj,253
 Dominica,dm,1767
-Dominican Republic,do,1,2
+Dominican Republic,do,1,3
 Ecuador,ec,593
 Egypt,eg,20
 El Salvador,sv,503
@@ -163,7 +163,7 @@ Peru,pe,51
 Philippines,ph,63
 Poland,pl,48
 Portugal,pt,351
-Puerto Rico,pr,1,3
+Puerto Rico,pr,1,4
 Qatar,qa,974
 Réunion,re,262
 Romania,ro,40
@@ -220,7 +220,7 @@ Uganda,ug,256
 Ukraine,ua,380
 United Arab Emirates,ae,971
 United Kingdom,gb,44
-United States,us,1,0
+United States,us,1,1
 Uruguay,uy,598
 Uzbekistan,uz,998
 Vanuatu,vu,678
