@@ -566,15 +566,12 @@ public abstract class BaseFlagFragment extends Fragment {
                     }
                 }
             }
-            if (!TextUtils.isEmpty(mPhoneEdit.getText())) {
-                return data;
-            }
             String countryRegion = PhoneUtils.getCountryRegionFromPhone(mContext);
             int code = mPhoneNumberUtil.getCountryCodeForRegion(countryRegion);
             ArrayList<Country> list = mCountriesMap.get(code);
             if (list != null) {
                 for (Country c : list) {
-                    if (c.getPriority() == 0) {
+                    if (c.getPriority() == 0 || c.getPriority() == 1) {
                         mSpinnerPosition = c.getNum();
                         break;
                     }
