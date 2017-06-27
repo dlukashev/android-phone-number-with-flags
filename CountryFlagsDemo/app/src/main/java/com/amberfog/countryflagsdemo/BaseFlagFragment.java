@@ -421,8 +421,8 @@ public abstract class BaseFlagFragment extends Fragment {
                             String code = num.substring(0, 3);
                             if (CANADA_CODES.contains(code)) {
                                 for (Country c : list) {
-                                    // Canada has priority 1, US has priority 0
-                                    if (c.getPriority() == 1) {
+                                    // Canada has priority 2, US has priority 1
+                                    if (c.getPriority() == 2) {
                                         country = c;
                                         break;
                                     }
@@ -430,8 +430,8 @@ public abstract class BaseFlagFragment extends Fragment {
                             }
                             else if (DO_CODES.contains(code)) {
                                 for (Country c : list) {
-                                    // Dominican Republic has priority 2
-                                    if (c.getPriority() == 2) {
+                                    // Dominican Republic has priority 3
+                                    if (c.getPriority() == 3) {
                                         country = c;
                                         break;
                                     }
@@ -439,8 +439,8 @@ public abstract class BaseFlagFragment extends Fragment {
                             }
                             else if (PR_CODES.contains(code)) {
                                 for (Country c : list) {
-                                    // Puerto Rico has priority 3
-                                    if (c.getPriority() == 3) {
+                                    // Puerto Rico has priority 4
+                                    if (c.getPriority() == 4) {
                                         country = c;
                                         break;
                                     }
@@ -449,8 +449,9 @@ public abstract class BaseFlagFragment extends Fragment {
                         }
                     }
                     if (country == null) {
+                        //If no country code is entered, default to US
                         for (Country c : list) {
-                            if (c.getPriority() == 0) {
+                            if (c.getPriority() == 1) {
                                 country = c;
                                 break;
                             }
@@ -565,15 +566,12 @@ public abstract class BaseFlagFragment extends Fragment {
                     }
                 }
             }
-            if (!TextUtils.isEmpty(mPhoneEdit.getText())) {
-                return data;
-            }
             String countryRegion = PhoneUtils.getCountryRegionFromPhone(mContext);
             int code = mPhoneNumberUtil.getCountryCodeForRegion(countryRegion);
             ArrayList<Country> list = mCountriesMap.get(code);
             if (list != null) {
                 for (Country c : list) {
-                    if (c.getPriority() == 0) {
+                    if (c.getPriority() == 0 || c.getPriority() == 1) {
                         mSpinnerPosition = c.getNum();
                         break;
                     }
